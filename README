@@ -1,0 +1,90 @@
+libdvdnav
+------------------------------------------
+libdvdnav is a library that allows easy use of sophisticated DVD
+navigation features such as DVD menus, multiangle playback and even
+interactive DVD games. All this functionality is provided through a
+simple API which provides the DVD playback as a single logical stream of
+blocks, intermitted by special dvdnav events to report certain
+conditions. The main usage of libdvdnav is a loop regularly calling a
+function to get the next block, surrounded by additional calls to tell
+the library of user interaction. The whole DVD virtual machine and
+internal playback states are completely encapsulated.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+
+Build requirements:
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20080624-2
+  cygport-0.4.0-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  libtool-2.2.2-2
+  make-3.80-1
+  sed-4.1.4-1
+
+Canonical website:
+  http://dvd.sourceforge.net/
+
+Canonical download:
+  http://downloads.sourceforge.net/dvd/
+
+-------------------------------------------
+
+Build instructions:
+  unpack libdvdnav-0.1.10-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./libdvdnav-0.1.10-X.cygport all
+
+This will create:
+  /usr/src/libdvdnav-0.1.10-X-src.tar.bz2
+  /usr/src/libdvdnav-0.1.10-X.tar.bz2
+  /usr/src/libdvdnav-devel-0.1.10-X.tar.bz2
+  /usr/src/libdvdnav4-0.1.10-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(libdvdnav4)
+  /usr/bin/cygdvdnav-4.dll
+  /usr/share/doc/libdvdnav-0.1.10/AUTHORS
+  /usr/share/doc/libdvdnav-0.1.10/ChangeLog
+  /usr/share/doc/libdvdnav-0.1.10/COPYING
+  /usr/share/doc/libdvdnav-0.1.10/INSTALL
+  /usr/share/doc/libdvdnav-0.1.10/NEWS
+  /usr/share/doc/libdvdnav-0.1.10/README
+  /usr/share/doc/libdvdnav-0.1.10/TODO
+
+(libdvdnav-devel)
+  /usr/bin/dvdnav-config
+  /usr/include/dvdnav/dvdnav.h
+  /usr/include/dvdnav/dvdnav_events.h
+  /usr/include/dvdnav/dvd_reader.h
+  /usr/include/dvdnav/dvd_types.h
+  /usr/include/dvdnav/ifo_print.h
+  /usr/include/dvdnav/ifo_read.h
+  /usr/include/dvdnav/ifo_types.h
+  /usr/include/dvdnav/nav_print.h
+  /usr/include/dvdnav/nav_read.h
+  /usr/include/dvdnav/nav_types.h
+  /usr/lib/libdvdnav.dll.a
+  /usr/lib/libdvdnav.la
+  /usr/share/aclocal/dvdnav.m4
+
+------------------
+
+Port Notes:
+
+----- version 0.1.10-2 -----
+Rebuilt with cygport.
+
+----- version 0.1.10-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

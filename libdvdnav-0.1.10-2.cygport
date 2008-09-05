@@ -1,0 +1,11 @@
+DESCRIPTION="DVD navigation library"
+HOMEPAGE="http://dvd.sourceforge.net/"
+SRC_URI="mirror://sourceforge/dvd/${P}.tar.gz"
+PATCH_URI="0.1.10-byteswap.patch"
+
+abi=4
+PKG_NAMES="${PN} ${PN}${abi} ${PN}-devel"
+PKG_HINTS="src dll devel"
+PKG_CONTENTS[0]=	# empty
+PKG_CONTENTS[1]="usr/bin/*-${abi}.dll usr/share/doc/"
+PKG_CONTENTS[2]="usr/bin/*-config usr/include/ usr/lib/ usr/share/aclocal/"
