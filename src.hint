@@ -1,5 +1,4 @@
-category: _obsolete
-requires: libdvdnav-devel
+category: Video
 sdesc: "DVD navigation library (source)"
 ldesc: "libdvdnav is a library that allows easy use of sophisticated DVD
 navigation features such as DVD menus, multiangle playback and even
