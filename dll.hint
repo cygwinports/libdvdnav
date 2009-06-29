@@ -1,5 +1,5 @@
 category: Video
-requires: cygwin libdvdread4 libgcc1
+requires: libdvdread4 libgcc1
 external-source: libdvdnav
 sdesc: "DVD navigation library (runtime)"
 ldesc: "libdvdnav is a library that allows easy use of sophisticated DVD
